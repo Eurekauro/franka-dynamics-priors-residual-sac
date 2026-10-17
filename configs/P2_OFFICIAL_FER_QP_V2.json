@@ -1,0 +1,18 @@
+{
+  "id": "P2_OFFICIAL_FER_QP_V2",
+  "status": "FROZEN_FOR_V2_RETEST",
+  "hardware_scope": "Franka Emika Panda / FER only; not Franka Research 3",
+  "timebase": {"control_dt_s": 0.004, "physics_dt_s": 0.002},
+  "torque_nm": [87, 87, 87, 87, 12, 12, 12],
+  "torque_slew_nm_s": [1000, 1000, 1000, 1000, 1000, 1000, 1000],
+  "velocity_rad_s": [2.175, 2.175, 2.175, 2.175, 2.61, 2.61, 2.61],
+  "acceleration_rad_s2": [15, 7.5, 10, 12.5, 15, 20, 20],
+  "jerk_rad_s3": [7500, 3750, 5000, 6250, 7500, 10000, 10000],
+  "position_rad": {"min": [-2.8973, -1.7628, -2.8973, -3.0718, -2.8973, -0.0175, -2.8973], "max": [2.8973, 1.7628, 2.8973, -0.0698, 2.8973, 3.7525, 2.8973]},
+  "qp": {"objective": "0.5*(tau_safe-tau_raw)^T W (tau_safe-tau_raw)", "W_diagonal": [1,1,1,1,1,1,1], "solver": "scipy.optimize.SLSQP", "ftol": 1e-10, "maxiter": 200, "constraint_tolerance": 1e-8, "fail_closed": true},
+  "constraints": {"torque_amplitude": "hard", "torque_slew": "hard", "one_control_interval_velocity_viability": "hard", "affine_forward_acceleration": "hard", "acceleration_margin": 1.0, "position": "physics-step hard monitor", "velocity": "physics-step hard monitor", "acceleration": "physics-step hard monitor"},
+  "position_dependent_velocity": {"status": "MONITORING_SCOPE_ONLY", "reason": "The pinned official Panda table gives fixed FCI joint velocity limits. Published libfranka computeUpper/Lower helpers documented in current API are explicitly FR3-based; no Panda-specific curve was imported or invented."},
+  "jerk": {"status": "MONITORING_SCOPE_ONLY", "reason": "FCI documents jerk as a joint-motion-generator interface condition. This project uses direct torque control; state finite-difference jerk is logged but is not substituted for a torque-interface command constraint."},
+  "source": {"official_control_parameters": "https://support.franka.de/docs/control_parameters.html#limits-for-panda", "official_fci": "https://support.franka.de/docs/libfranka.html", "accessed": "2026-10-16"},
+  "historical_delta": {"removed_project_slew_nm_s": [500,500,500,500,150,150,150], "removed_acceleration_margin": 0.95, "preserved": ["torque amplitude", "position/velocity/acceleration monitoring", "solver/contact monitoring", "fail-closed", "4ms control", "2ms physics"]}
+}

@@ -1,0 +1,13 @@
+# Reconstructed from the verified final Sim runtime.  Regenerate only in a new
+# environment; the original .venv-r3 is intentionally not transplanted.
+gymnasium==1.0.0
+mujoco==3.3.5
+numpy==2.2.6
+scipy==1.15.2
+stable-baselines3==2.7.1
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.4.1+cpu
+matplotlib==3.10.0
+imageio==2.38.1
+imageio-ffmpeg==0.6.0
+pandas==2.2.3

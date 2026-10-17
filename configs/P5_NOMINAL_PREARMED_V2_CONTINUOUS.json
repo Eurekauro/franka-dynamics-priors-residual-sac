@@ -1,0 +1,248 @@
+{
+  "id": "P5_NOMINAL_PREARMED_V2_CONTINUOUS",
+  "parent_protocol": "P3_P4_P5_FER_QP_V2_1",
+  "status": "FROZEN_BEFORE_ISOLATED_CONFIRMATION",
+  "evaluation": {
+    "policy_modes": [
+      "pure_sac",
+      "pd_residual",
+      "mlp_residual",
+      "gp_residual",
+      "rbf_residual"
+    ],
+    "policy_seeds": [
+      201,
+      202,
+      203,
+      204,
+      205
+    ],
+    "final_holdout_seeds": [
+      30000,
+      30001,
+      30002,
+      30003,
+      30004,
+      30005,
+      30006,
+      30007,
+      30008,
+      30009,
+      30010,
+      30011,
+      30012,
+      30013,
+      30014,
+      30015,
+      30016,
+      30017,
+      30018,
+      30019,
+      30020,
+      30021,
+      30022,
+      30023,
+      30024,
+      30025,
+      30026,
+      30027,
+      30028,
+      30029
+    ],
+    "deterministic_policy": true,
+    "tracking_controls": 500,
+    "startup_controls": 500,
+    "total_episodes": 9750
+  },
+  "isolation": "Forward Plant only; QP and Startup Gravity use an independent nominal Panda model from actual q/qdot observations. Priors, PD, policy and all hard limits remain nominal/frozen.",
+  "resources": {
+    "cpu_core_hours_max": 30,
+    "wall_hours_max": 12,
+    "ram_gib_max": 28,
+    "workers": 5
+  },
+  "metrics": [
+    "completion_rate",
+    "termination_reason",
+    "tracking_steps",
+    "completed_episode_q_dq_rmse",
+    "prefix_q_dq_rmse_for_failed",
+    "paired_nominal_to_mismatch_degradation",
+    "qp_projection",
+    "safe_torque",
+    "hard_violation_fail_closed"
+  ],
+  "conditions": [
+    {
+      "id": "nominal"
+    },
+    {
+      "id": "mass_inertia_0p85",
+      "mass_inertia_scale": 0.85
+    },
+    {
+      "id": "mass_inertia_1p15",
+      "mass_inertia_scale": 1.15
+    },
+    {
+      "id": "inertia_0p85",
+      "inertia_scale": 0.85
+    },
+    {
+      "id": "inertia_1p15",
+      "inertia_scale": 1.15
+    },
+    {
+      "id": "damping_0p70",
+      "damping_scale": 0.7
+    },
+    {
+      "id": "damping_1p30",
+      "damping_scale": 1.3
+    },
+    {
+      "id": "friction_low",
+      "frictionloss_nm": [
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.04,
+        0.04,
+        0.04
+      ]
+    },
+    {
+      "id": "friction_high",
+      "frictionloss_nm": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.08,
+        0.08,
+        0.08
+      ]
+    },
+    {
+      "id": "payload_0p25kg",
+      "payload_mass_kg": 0.25,
+      "payload_local_position_m": [
+        0,
+        0,
+        0.1
+      ],
+      "payload_sphere_radius_m": 0.03
+    },
+    {
+      "id": "payload_0p50kg",
+      "payload_mass_kg": 0.5,
+      "payload_local_position_m": [
+        0,
+        0,
+        0.1
+      ],
+      "payload_sphere_radius_m": 0.03
+    },
+    {
+      "id": "combined_mild",
+      "mass_inertia_scale": 1.1,
+      "damping_scale": 1.15,
+      "frictionloss_nm": [
+        0.15,
+        0.15,
+        0.15,
+        0.15,
+        0.04,
+        0.04,
+        0.04
+      ],
+      "payload_mass_kg": 0.25,
+      "payload_local_position_m": [
+        0,
+        0,
+        0.1
+      ],
+      "payload_sphere_radius_m": 0.03
+    },
+    {
+      "id": "combined_strong",
+      "mass_inertia_scale": 1.15,
+      "damping_scale": 1.3,
+      "frictionloss_nm": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.08,
+        0.08,
+        0.08
+      ],
+      "payload_mass_kg": 0.5,
+      "payload_local_position_m": [
+        0,
+        0,
+        0.1
+      ],
+      "payload_sphere_radius_m": 0.03
+    }
+  ],
+  "prohibitions": [
+    "no policy/prior training",
+    "no checkpoint selection after Final access",
+    "no mismatch adaptation",
+    "no modification of PandaSafety or hard limits",
+    "no Final-driven tuning"
+  ],
+  "parent": "P5_NOMINAL_PREARMED_V1",
+  "scenarios": {
+    "seed_pool": [
+      40000,
+      40999
+    ],
+    "seeds": [
+      40000,
+      40001,
+      40002,
+      40003,
+      40004,
+      40005,
+      40006,
+      40007,
+      40008,
+      40009,
+      40010,
+      40011,
+      40012,
+      40013,
+      40014,
+      40015,
+      40016,
+      40017,
+      40018,
+      40019,
+      40020,
+      40021,
+      40022,
+      40023,
+      40024,
+      40025,
+      40026,
+      40027,
+      40028,
+      40029
+    ],
+    "selection": "first 30 structurally valid seeds in ascending order; continuous deterministic phase from each seed in [-0.15,0.15]; full reference hashes must be unique and not read by policy selection"
+  },
+  "old_p5_disposition": "MISMATCH_AWARE_SAFETY_DIAGNOSTIC_NOT_NOMINAL_CONTROLLER_ZERO_SHOT",
+  "arming": {
+    "prearmed_nominal_hold": true,
+    "kp_scale": 1.0,
+    "kd_scale": 1.0,
+    "gravity_scale": 1.0,
+    "rule": "uniform; initialize plant ctrl and nominal-QP tau_prev to nominal gravity before first physics step"
+  },
+  "branch_rule": "STARTUP_FAILURE is a system robustness failure; do not run tracking if reset fails; evaluate all 9750 units as startup-or-tracking outcomes",
+  "startup_fix": "prearmed tau_prev and initial ctrl are nominal hold; subsequent startup command is nominal gravity + home PD without restarting a gravity ramp",
+  "train_side_gate": "13_of_13_PASS_before_final"
+}

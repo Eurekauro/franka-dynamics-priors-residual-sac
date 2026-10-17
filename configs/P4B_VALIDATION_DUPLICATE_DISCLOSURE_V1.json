@@ -1,0 +1,10 @@
+{
+  "id": "P4B_VALIDATION_DUPLICATE_DISCLOSURE_V1",
+  "parent_protocol": "P4B_FULL_TRAINING_ADDENDUM_V1",
+  "discovered_before_p4b_training": true,
+  "frozen_validation_seed_count": 12,
+  "unique_reference_trajectory_count": 9,
+  "duplicate_seed_mapping": {"20006": 20003, "20007": 20004, "20010": 20001},
+  "disposition": "RETAIN_FROZEN_SCENARIOS; report seed-level results and deduplicated-reference sensitivity summaries; do not replace, select, or tune against Validation scenarios",
+  "scientific_limit": "Seed-level validation aggregates overweight three reference trajectories and must not be treated as twelve independent trajectory draws."
+}

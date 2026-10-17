@@ -1,0 +1,20 @@
+[project]
+name = "franka-dynamics-priors-residual-sac"
+version = "0.1.0"
+description = "Frozen Sim-trained dynamics priors and safety-constrained Residual SAC evidence runtime"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+  "gymnasium==1.0.0",
+  "mujoco==3.3.5",
+  "numpy==2.2.6",
+  "scipy==1.15.2",
+  "stable-baselines3==2.7.1",
+  "torch==2.4.1+cpu",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
