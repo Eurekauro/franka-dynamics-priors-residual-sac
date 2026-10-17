@@ -7,5 +7,4 @@ internal_archive/
 models/
 policies/
 results/
-visualization/*.mp4
-visualization/*.gif
+visualization/
