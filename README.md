@@ -2,7 +2,7 @@
 
 An empirical MuJoCo study of whether frozen, simulation-trained inverse-dynamics priors assist residual SAC under common feedback control and a fail-closed safety QP. It evaluates nominal control and zero-shot forward-plant mismatch; it does not establish real-robot performance, FCI/ISO compliance, or hardware safety certification.
 
-> **Release status:** this is a source/configuration public candidate. Frozen models, policies, numerical results, figures, and media remain pending owner distribution and license decisions. See [artifact availability](docs/ARTIFACT_AVAILABILITY.md).
+> **Release status:** this is a public showcase candidate. The selected figures, aggregate CSVs, GIF, and MP4 in `docs/assets/` are included as Owner-authorized showcase material. Frozen models, SAC policies, full episode-level results, and internal archives are not distributed. See [artifact availability](docs/ARTIFACT_AVAILABILITY.md).
 
 ![Safety-constrained residual SAC architecture](docs/assets/figures/control_architecture.svg)
 

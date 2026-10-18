@@ -1,6 +1,6 @@
 # Showcase asset provenance
 
-The files here are selected, byte-preserving copies from frozen local final-consolidation outputs. They are Owner-authorized GitHub showcase assets, not a release of policies, raw episode records, training logs, or internal review material.
+The files here are selected, byte-preserving copies from frozen local final-consolidation outputs. The tracked showcase set contains 16 assets: 7 aggregate CSVs, 6 figures/architecture files, and 3 media files. They are Owner-authorized GitHub showcase assets, not a release of policies, raw episode records, training logs, or internal review material.
 
 | Public path | Frozen local source | Scope |
 |---|---|---|

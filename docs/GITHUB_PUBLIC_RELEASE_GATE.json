@@ -1,5 +1,7 @@
 {
   "scope": "GITHUB_PUBLIC_SHOWCASE_CANDIDATE",
+  "showcase_asset_count": 16,
+  "showcase_asset_breakdown": "7 aggregate CSVs; 6 figures/architecture files; 3 media files",
   "CODE_LICENSE_APACHE_2_0": "PASS",
   "THIRD_PARTY_NOTICE_COMPLIANCE": "PASS_WITH_LIMITATIONS",
   "PANDA_ASSET_PROVENANCE": "PASS_WITH_LIMITATIONS",

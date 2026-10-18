@@ -8,7 +8,7 @@ This review covers the current worktree and all reachable commits through the cu
 
 - No match was found for scanned high-confidence token/private-key patterns in current tracked content or reachable commits.
 - The tracked tree contains no `.env` file, virtual environment, frozen model/policy corpus, full episode corpus, or internal archive payload.
-- Five local unreachable intermediate blobs from release preparation were separately scanned; no high-confidence secret pattern matched. They are not reachable from the candidate HEAD and no history rewrite was performed.
+- Six local unreachable intermediate blobs from release preparation were separately scanned; no high-confidence secret pattern matched. They are not reachable from the candidate HEAD and no history rewrite was performed.
 - Historical provenance records are intentionally ignored. They contain local source-path evidence and must not be moved into a public candidate without path sanitization and owner review.
 
 ## Release controls

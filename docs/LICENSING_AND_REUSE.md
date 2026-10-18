@@ -1,34 +1,14 @@
-# Licensing and reuse review draft
+# Licensing and reuse
 
-This is an engineering inventory, not legal advice. A project owner should obtain an appropriate legal review before publication or redistribution.
+Original project source code is licensed under Apache-2.0 under the Owner-approved scope. The root `LICENSE` contains the complete license text and `NOTICE` records the boundary: this does not automatically relicense third-party assets, dependencies, data, models, policies, or media.
 
-## Known third-party boundaries
+| Material | Current public treatment | Evidence |
+|---|---|---|
+| Original source, configuration, tests, and documentation | Apache-2.0 | Root `LICENSE`, `NOTICE`, `LICENSE_STATUS.md`. |
+| Menagerie Panda subtree | Included with its own Apache-2.0 license and README | `assets/mujoco_menagerie/franka_emika_panda/`. |
+| Panda integration XML | Included with Menagerie notice retained | `THIRD_PARTY_NOTICES.md`, `THIRD_PARTY_ASSET_MATRIX.csv`. |
+| Selected figures, 7 aggregate CSVs, GIF, cover, MP4 | Owner-authorized showcase assets; not relicensed as software | `docs/assets/ASSET_PROVENANCE.md`. |
+| Frozen weights, policies, full episode data, logs, buffers, archive | Internal only; not distributed | `.gitignore`, `ARTIFACT_AVAILABILITY.md`. |
+| Historical LIP/data provenance | Not distributed | Internal archive only; no AGPL/CC BY-SA conclusion for excluded material. |
 
-| Material | Local evidence | Known license/status | Release implication |
-| --- | --- | --- | --- |
-| MERL LIP4RobotInverseDynamics | `third_party/LIP4RobotInverseDynamics/LICENSE.md` | AGPL-3.0 | Keep third-party code isolated; preserve notices and fulfill obligations that apply to any conveyed modified/derivative code. |
-| MERL Robot Inverse Dynamics Dataset | `data/official/zenodo_12516500/extracted/Data/README.md` | CC BY-SA-4.0 declaration | Attribute properly; review share-alike and redistribution obligations before including data or derivatives. |
-| MuJoCo Menagerie | `third_party/mujoco_menagerie/LICENSE` and directory-specific notices | Mixed / directory-specific | Audit the exact Panda asset, meshes, and their notices; do not assign one blanket license without checking its directory. |
-| Project-original control, adapters, evaluation, and audit tools | repository source outside `third_party/` | No project-wide public license found | Owner must choose a project license before public release. |
-
-## Recommended source separation
-
-- Preserve `third_party/LIP4RobotInverseDynamics/` verbatim whenever possible.
-- Keep project-original adapters and safety/control code outside the third-party tree.
-- State clearly whether a script imports, copies, modifies, or only interfaces with AGPL components.
-- Do not bundle proprietary/uncleared checkpoint files, Zenodo data, real-robot recordings, or large model artifacts merely for convenience.
-- Publish an artifact manifest with source URL, upstream revision, local SHA-256, license notice, and redistribution decision for every nontrivial third-party item.
-
-## Required release decisions
-
-Public release remains blocked until the owner decides and documents:
-
-1. the project-original code license;
-2. whether any AGPL-covered code has been modified or combined in a conveyed work;
-3. whether official data, derived Safe-NPZ files, checkpoints, or saved predictions can be redistributed under their applicable terms;
-4. the exact Menagerie Panda asset and mesh license provenance;
-5. required citations and attribution text.
-
-## Citation baseline
-
-The dataset README requests citation of Giacomuzzo, Dalla Libera, and Romeres (IEEE Transactions on Robotics, 2024) for use of the Robot Inverse Dynamics Dataset. The public release should include an exact BibTeX entry verified against the final publication record, rather than inventing bibliographic fields.
+This is an engineering inventory, not legal advice. Future distribution of currently internal artifacts requires a separate rights and manifest review.
