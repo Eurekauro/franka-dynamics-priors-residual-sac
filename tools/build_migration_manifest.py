@@ -69,7 +69,7 @@ def main() -> None:
         ('r3_mujoco/p4b_pd_gravity_attempt02', 'runtime training checkpoints/replay buffers; selected policy-only copies migrate'),
         ('data/official', 'official dataset and derived artifacts; redistribution unresolved'),
         ('third_party/LIP4RobotInverseDynamics', 'AGPL R1 provenance only, outside final Sim runtime'),
-        ('.venv', 'legacy environment'), ('.venv-r3', 'environment is recreated from lock'),
+        ('.venv', 'historical virtual environments are not migrated'),
         ('results', 'legacy real-data/R2 result corpus outside final Sim mainline'),
     ]
     exrows = []
