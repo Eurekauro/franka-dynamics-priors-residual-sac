@@ -81,3 +81,7 @@ The showcase includes owner-authorized exposed-scenario diagnostic replays, incl
 Ignored roots (`models/`, `policies/`, `results/`, `visualization/`, `internal_archive/`) belong to `FULL_LOCAL_PROJECT`, not `GITHUB_PUBLIC_CANDIDATE`.
 
 Learned priors beat Pure SAC and PD-without-gravity on strict-P5 aggregates, but PD+Gravity is post-hoc and does not establish a stable learned-prior benefit over analytical gravity. The experiment is finite and simulation-only; it demonstrates neither robust all-condition safety nor real-robot readiness. See [limitations](docs/LIMITATIONS.md), [license audit](docs/LICENSE_AUDIT.md), [notices](docs/THIRD_PARTY_NOTICES.md), and [release precheck](docs/GITHUB_RELEASE_PRECHECK.md).
+
+## License
+
+**Original project source code is licensed under Apache-2.0.** Third-party assets remain under their respective licenses and notices. The selected figures, aggregate CSVs, GIF, and MP4 are included as Owner-authorized showcase material; they are not software relicensed by Apache-2.0. Frozen model weights and full research artifacts are not distributed. See [LICENSE](LICENSE), [NOTICE](NOTICE), and [asset/license audit](docs/LICENSE_AUDIT.md).

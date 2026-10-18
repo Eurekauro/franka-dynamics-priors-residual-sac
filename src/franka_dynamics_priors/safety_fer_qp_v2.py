@@ -1,4 +1,5 @@
 """Panda/FER V2 torque safety projection.  Historical safety.py remains untouched."""
+# SPDX-License-Identifier: Apache-2.0
 import json
 from pathlib import Path
 import numpy as np

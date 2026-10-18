@@ -1,4 +1,5 @@
 """New P3 environment; historical P3 environment remains immutable."""
+# SPDX-License-Identifier: Apache-2.0
 import json
 from pathlib import Path
 import gymnasium as gym

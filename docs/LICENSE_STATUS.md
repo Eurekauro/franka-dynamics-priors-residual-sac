@@ -1,5 +1,5 @@
-# License status: pending owner decision
+# License status
 
-No project-wide public license is granted by this repository at present. The owner must select and add a license before public release. This status does not alter third-party licenses or determine whether any component may be redistributed.
+**Original project source code: Apache-2.0.** The complete Apache License 2.0 text is in the repository-root `LICENSE`; `NOTICE` records project and third-party boundaries.
 
-The release candidate is therefore not approved for public publication. See `LICENSE_AUDIT.md`, `THIRD_PARTY_NOTICES.md`, and `DISTRIBUTION_MANIFEST.csv`.
+This grant does not relicense Panda/Menagerie assets, dependencies, showcase media, datasets, model weights, policies, or other third-party material. The current public showcase distributes only the files classified as public in `DISTRIBUTION_MANIFEST.csv`; frozen weights and full research artifacts are not distributed.

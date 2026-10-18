@@ -1,77 +1,79 @@
 repository_path,distribution_class,rationale,file_type
 .github/workflows/ci.yml,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",yml
 .gitignore,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",NO_EXTENSION
+LICENSE,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",NO_EXTENSION
+NOTICE,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",NO_EXTENSION
 README.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
-assets/mujoco_menagerie/franka_emika_panda/LICENSE,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,NO_EXTENSION
-assets/mujoco_menagerie/franka_emika_panda/README.md,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,md
-assets/mujoco_menagerie/franka_emika_panda/assets/finger_0.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/finger_1.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/hand.stl,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,stl
-assets/mujoco_menagerie/franka_emika_panda/assets/hand_0.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/hand_1.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/hand_2.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/hand_3.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/hand_4.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0.stl,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,stl
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_0.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_1.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_10.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_11.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_2.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_3.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_4.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_5.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_7.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_8.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link0_9.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link1.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link1.stl,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,stl
-assets/mujoco_menagerie/franka_emika_panda/assets/link2.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link2.stl,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,stl
-assets/mujoco_menagerie/franka_emika_panda/assets/link3.stl,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,stl
-assets/mujoco_menagerie/franka_emika_panda/assets/link3_0.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link3_1.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link3_2.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link3_3.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link4.stl,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,stl
-assets/mujoco_menagerie/franka_emika_panda/assets/link4_0.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link4_1.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link4_2.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link4_3.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link5_0.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link5_1.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link5_2.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link5_collision_0.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link5_collision_1.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link5_collision_2.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6.stl,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,stl
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_0.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_1.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_10.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_11.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_12.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_13.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_14.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_15.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_16.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_2.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_3.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_4.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_5.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_6.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_7.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_8.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link6_9.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link7.stl,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,stl
-assets/mujoco_menagerie/franka_emika_panda/assets/link7_0.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link7_1.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link7_2.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link7_3.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link7_4.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link7_5.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link7_6.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/mujoco_menagerie/franka_emika_panda/assets/link7_7.obj,PUBLIC_PENDING_LICENSE,Panda Menagerie subtree is third-party; retain notices and confirm exact asset provenance.,obj
-assets/panda_direct_torque_v2.xml,PUBLIC_PENDING_LICENSE,Robot MJCF and referenced assets need final provenance review.,xml
+assets/mujoco_menagerie/franka_emika_panda/LICENSE,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,NO_EXTENSION
+assets/mujoco_menagerie/franka_emika_panda/README.md,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,md
+assets/mujoco_menagerie/franka_emika_panda/assets/finger_0.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/finger_1.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/hand.stl,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,stl
+assets/mujoco_menagerie/franka_emika_panda/assets/hand_0.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/hand_1.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/hand_2.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/hand_3.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/hand_4.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0.stl,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,stl
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_0.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_1.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_10.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_11.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_2.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_3.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_4.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_5.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_7.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_8.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link0_9.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link1.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link1.stl,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,stl
+assets/mujoco_menagerie/franka_emika_panda/assets/link2.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link2.stl,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,stl
+assets/mujoco_menagerie/franka_emika_panda/assets/link3.stl,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,stl
+assets/mujoco_menagerie/franka_emika_panda/assets/link3_0.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link3_1.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link3_2.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link3_3.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link4.stl,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,stl
+assets/mujoco_menagerie/franka_emika_panda/assets/link4_0.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link4_1.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link4_2.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link4_3.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link5_0.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link5_1.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link5_2.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link5_collision_0.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link5_collision_1.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link5_collision_2.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6.stl,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,stl
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_0.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_1.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_10.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_11.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_12.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_13.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_14.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_15.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_16.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_2.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_3.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_4.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_5.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_6.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_7.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_8.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link6_9.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link7.stl,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,stl
+assets/mujoco_menagerie/franka_emika_panda/assets/link7_0.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link7_1.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link7_2.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link7_3.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link7_4.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link7_5.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link7_6.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/mujoco_menagerie/franka_emika_panda/assets/link7_7.obj,PUBLIC_ALLOWED,Third-party Menagerie Panda asset; retain its Apache-2.0 LICENSE and README.,obj
+assets/panda_direct_torque_v2.xml,PUBLIC_ALLOWED,Project integration asset; retain the referenced Menagerie notice and provenance matrix.,xml
 configs/P2_OFFICIAL_FER_QP_V2.json,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",json
 configs/P2_OFFICIAL_FER_QP_V2_1.json,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",json
 configs/P3_P4_P5_FER_QP_V2_PROTOCOL.json,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",json
@@ -83,7 +85,9 @@ docs/ARTIFACT_AVAILABILITY.md,PUBLIC_ALLOWED,"Project source, configuration, doc
 docs/DISTRIBUTION_MANIFEST.csv,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",csv
 docs/FINAL_GATE.json,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",json
 docs/FINAL_RESEARCH_REPORT.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
+docs/GITHUB_PUBLIC_RELEASE_GATE.json,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",json
 docs/GITHUB_RELEASE_PRECHECK.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
+docs/HISTORICAL_SCIENTIFIC_GATE.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
 docs/LICENSE_AUDIT.md,PUBLIC_ALLOWED,Release-review documentation; does not select a project license.,md
 docs/LICENSE_STATUS.md,PUBLIC_ALLOWED,Release-review documentation; does not select a project license.,md
 docs/LICENSING_AND_REUSE.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
@@ -92,24 +96,25 @@ docs/README_DRAFT.md,PUBLIC_ALLOWED,"Project source, configuration, documentatio
 docs/REPRODUCIBILITY.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
 docs/RESULT_SCOPE.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
 docs/SECURITY_AND_PRIVACY_AUDIT.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
+docs/THIRD_PARTY_ASSET_MATRIX.csv,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",csv
 docs/THIRD_PARTY_NOTICES.md,PUBLIC_ALLOWED,Release-review documentation; does not select a project license.,md
-docs/assets/ASSET_PROVENANCE.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
-docs/assets/data/p4_validation_per_training_seed.csv,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",csv
-docs/assets/data/p4_validation_summary.csv,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",csv
-docs/assets/data/p4b_learning_curves_validation.csv,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",csv
-docs/assets/data/p5_condition_summary.csv,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",csv
-docs/assets/data/p5_overall_completion_by_training_seed.csv,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",csv
-docs/assets/data/p5_per_training_seed_condition.csv,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",csv
-docs/assets/data/p5_termination_reason_counts.csv,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",csv
-docs/assets/demos/cover.png,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",png
-docs/assets/demos/github_preview_point_to_point.gif,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",gif
-docs/assets/demos/main_showcase_reel.mp4,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",mp4
-docs/assets/figures/control_architecture.svg,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",svg
-docs/assets/figures/p4b_validation_learning_curves.png,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",png
-docs/assets/figures/p4b_validation_six_group_summary.png,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",png
-docs/assets/figures/p5_overall_completion_strict_vs_posthoc.png,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",png
-docs/assets/figures/p5_strict_completion_heatmap.png,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",png
-docs/assets/figures/p5_termination_reasons.png,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",png
+docs/assets/ASSET_PROVENANCE.md,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,md
+docs/assets/data/p4_validation_per_training_seed.csv,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,csv
+docs/assets/data/p4_validation_summary.csv,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,csv
+docs/assets/data/p4b_learning_curves_validation.csv,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,csv
+docs/assets/data/p5_condition_summary.csv,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,csv
+docs/assets/data/p5_overall_completion_by_training_seed.csv,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,csv
+docs/assets/data/p5_per_training_seed_condition.csv,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,csv
+docs/assets/data/p5_termination_reason_counts.csv,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,csv
+docs/assets/demos/cover.png,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,png
+docs/assets/demos/github_preview_point_to_point.gif,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,gif
+docs/assets/demos/main_showcase_reel.mp4,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,mp4
+docs/assets/figures/control_architecture.svg,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,svg
+docs/assets/figures/p4b_validation_learning_curves.png,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,png
+docs/assets/figures/p4b_validation_six_group_summary.png,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,png
+docs/assets/figures/p5_overall_completion_strict_vs_posthoc.png,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,png
+docs/assets/figures/p5_strict_completion_heatmap.png,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,png
+docs/assets/figures/p5_termination_reasons.png,PUBLIC_ALLOWED,Owner-authorized showcase asset; see docs/assets/ASSET_PROVENANCE.md.,png
 docs/interview/RESUME_BULLETS_ZH_EN.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
 docs/interview/TECHNICAL_TALK_ZH_EN.md,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",md
 pyproject.toml,PUBLIC_ALLOWED,"Project source, configuration, documentation, or reproducibility support file.",toml

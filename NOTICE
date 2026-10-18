@@ -1,0 +1,17 @@
+Franka Dynamics Priors & Residual SAC
+
+Original project source code is licensed under the Apache License, Version 2.0.
+Copyright ownership is not asserted here beyond the Owner-authorized original
+project material; no legal name or institutional affiliation is inferred.
+
+Third-party notices:
+
+* The tracked `assets/mujoco_menagerie/franka_emika_panda/` subtree retains
+  its own Apache-2.0 LICENSE and README. Its README identifies the model as a
+  MuJoCo Menagerie Panda description derived from the public franka_ros URDF.
+  The upstream notice and license govern that subtree.
+
+* Runtime dependencies are not vendored. Their respective licenses apply.
+
+Frozen model weights, SAC policies, full episode-level results, training logs,
+replay buffers, and internal archives are not distributed by this repository.

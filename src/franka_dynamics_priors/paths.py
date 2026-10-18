@@ -1,4 +1,5 @@
 """Portable project paths; archived reports never determine a runtime path."""
+# SPDX-License-Identifier: Apache-2.0
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]

@@ -2,20 +2,17 @@
 
 ## Decision status
 
-**BLOCKED — owner/legal decisions required before public release.** No project license has been selected. This audit preserves the distinction between dependency use, copied assets, provenance records, and research artifacts; it does not make a legal conclusion beyond the evidence listed below.
+The Owner has authorized Apache-2.0 for original project source code. No copyright-holder identity is inferred in individual file headers; SPDX identifiers mark the core original Python runtime only. The root license does not apply automatically to third-party or non-software assets.
 
-## Evidence-based findings
+## Boundaries
 
-- The tracked Panda Menagerie subtree includes its local license notice. Its exact source revision and asset inventory must be retained with any release.
-- The final runtime pins MuJoCo, Gymnasium, NumPy, SciPy, Stable-Baselines3, and PyTorch in `requirements.lock`; their source code is not vendored.
-- The archived provenance identifies an AGPL-3.0 LIP source and CC BY-SA-4.0 data background. They are outside the final Sim-trained control runtime. Whether any saved derivative/model artifact may be conveyed remains unresolved.
-- Frozen models, SAC policies, numeric results, review material, and media are deliberately ignored by Git. Their public distribution requires an owner decision and a hash-addressed release manifest.
+| Material | Distribution conclusion | Evidence |
+|---|---|---|
+| Original runtime, tools, tests, configs, and documentation | Apache-2.0, subject to Owner authority | Root `LICENSE`, `NOTICE`, SPDX markers on core runtime. |
+| Menagerie Panda asset subtree | Included with its own Apache-2.0 notice | Local subtree `LICENSE` and README; upstream in `THIRD_PARTY_NOTICES.md`. |
+| `assets/panda_direct_torque_v2.xml` | Included as project integration material with Menagerie notice retained | XML references tracked Menagerie meshes; see asset matrix. |
+| Selected figures/aggregate CSV/media | Owner-authorized showcase material; not relicensed as Apache software | `docs/assets/ASSET_PROVENANCE.md`. |
+| Frozen weights, policies, full episode records, logs, buffers, internal archive | Internal only; not distributed | `.gitignore`, artifact availability document. |
+| Historical LIP/data provenance | Not part of public runtime/distribution | Isolated ignored archive; no conclusion on AGPL/CC BY-SA derivative rights. |
 
-## Required owner decisions
-
-1. Select a license for project-original source and documentation.
-2. Confirm ownership and redistribution rights for frozen models, policies, results, media, and derived numerical artifacts.
-3. Confirm the exact Panda asset/mesh provenance and required notices.
-4. Obtain legal advice on any AGPL or CC BY-SA implications before conveying related material.
-
-Until these decisions are recorded, the public-release gate remains blocked.
+This is an engineering inventory, not legal advice. It does not decide rights for untracked internal artifacts or remove obligations from third-party components.

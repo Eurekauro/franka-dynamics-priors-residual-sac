@@ -1,4 +1,5 @@
 """Frozen nominal PD and analytical gravity helpers used by the final protocol."""
+# SPDX-License-Identifier: Apache-2.0
 import mujoco
 import numpy as np
 

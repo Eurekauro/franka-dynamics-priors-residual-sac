@@ -4,6 +4,7 @@ Unlike :mod:`p2_simtrained_adapters`, this module reads a verified NPZ once at
 construction.  Its prediction equations are intentionally identical; it is an
 I/O and allocation optimisation only.  It never writes model artifacts.
 """
+# SPDX-License-Identifier: Apache-2.0
 from pathlib import Path
 import numpy as np
 
