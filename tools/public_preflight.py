@@ -11,7 +11,8 @@ REQUIRED = (
     "assets/panda_direct_torque_v2.xml",
     "configs/P2_OFFICIAL_FER_QP_V2.json",
     "configs/P3_P4_P5_FER_QP_V2_PROTOCOL.json",
-    "docs/LICENSE_STATUS.md", "docs/DISTRIBUTION_MANIFEST.csv",
+    "docs/ARTIFACT_AVAILABILITY.md", "docs/LICENSING_AND_REUSE.md",
+    "docs/THIRD_PARTY_NOTICES.md", "docs/assets/ASSET_PROVENANCE.md",
 )
 OPTIONAL_FROZEN = ("models/priors", "policies", "results")
 

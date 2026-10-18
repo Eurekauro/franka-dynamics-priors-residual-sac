@@ -32,4 +32,4 @@
 - This repository has Git metadata and Apache-2.0 for Owner-authorized original source; third-party asset notices and all excluded internal-artifact rights remain separate boundaries.
 - The showcase exposes a lightweight testable code path; frozen weights, policies, full episode data, and complete replay remain owner-retained.
 - `requirements.lock` is version-pinned but is not a complete portable hash/transitive lock.
-- Archived migration scripts may retain historical paths and are not current public entry points.
+- Full-local verification requires owner-retained frozen artifacts and is not a public one-command workflow.

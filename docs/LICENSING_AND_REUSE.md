@@ -4,7 +4,7 @@ Original project source code is licensed under Apache-2.0 under the Owner-approv
 
 | Material | Current public treatment | Evidence |
 |---|---|---|
-| Original source, configuration, tests, and documentation | Apache-2.0 | Root `LICENSE`, `NOTICE`, `LICENSE_STATUS.md`. |
+| Original source, configuration, tests, and documentation | Apache-2.0 | Root `LICENSE` and `NOTICE`. |
 | Menagerie Panda subtree | Included with its own Apache-2.0 license and README | `assets/mujoco_menagerie/franka_emika_panda/`. |
 | Panda integration XML | Included with Menagerie notice retained | `THIRD_PARTY_NOTICES.md`, `THIRD_PARTY_ASSET_MATRIX.csv`. |
 | Selected figures, 7 aggregate CSVs, GIF, cover, MP4 | Owner-authorized showcase assets; not relicensed as software | `docs/assets/ASSET_PROVENANCE.md`. |
