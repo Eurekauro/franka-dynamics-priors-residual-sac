@@ -4,6 +4,12 @@ An empirical MuJoCo study of whether frozen, simulation-trained inverse-dynamics
 
 > **Release status:** this is a source/configuration public candidate. Frozen models, policies, numerical results, figures, and media remain pending owner distribution and license decisions. See [artifact availability](docs/ARTIFACT_AVAILABILITY.md).
 
+![Safety-constrained residual SAC architecture](docs/assets/figures/control_architecture.svg)
+
+![Franka Panda MuJoCo replay](docs/assets/demos/github_preview_point_to_point.gif)
+
+The GIF and [1080p showcase MP4](docs/assets/demos/main_showcase_reel.mp4) are exposed-scenario diagnostics, not additional P4/P5 evaluation evidence.
+
 ## Questions and method
 
 The study asks whether frozen MLP, expanded-GP, or expanded-RBF dynamics priors improve residual SAC relative to Pure SAC and PD+Residual SAC, whether effects persist under forward-plant mismatch, and how they compare with analytical nominal gravity compensation. The learned priors are simulation-trained (MLP-3000/seed41, GP-6000/g468, RBF-30000/1536/w3); historical real-data work is provenance only.
@@ -34,6 +40,12 @@ The local full project contains 30 selected policies (15.0M transitions) and 360
 
 P5 aggregates are descriptive, not statistical-superiority claims. Completion is low in many mismatch conditions and `acceleration_limit` dominates failure. Prefix RMSE for terminated episodes is not full-trajectory tracking RMSE.
 
+![P4 validation six-group summary](docs/assets/figures/p4b_validation_six_group_summary.png)
+
+![Strict P5 completion heatmap](docs/assets/figures/p5_strict_completion_heatmap.png)
+
+Selected aggregate CSVs used for the showcase are in [`docs/assets/data/`](docs/assets/data/); they are not the full episode corpus. See [`docs/assets/ASSET_PROVENANCE.md`](docs/assets/ASSET_PROVENANCE.md).
+
 ## Reproduction levels
 
 Python 3.11 is required. `requirements.lock` is version-pinned but not a complete hash/transitive lock.
@@ -59,7 +71,7 @@ They do not train policies or rerun final P5. A public clone must not promise Le
 
 ## Demonstrations, layout, and limits
 
-The local full project has audited exposed-scenario diagnostic replays, including a showcase and retained fail-closed mismatch case. They are not extra P4/P5 evidence and are not linked here because media release is pending.
+The showcase includes owner-authorized exposed-scenario diagnostic replays, including a retained fail-closed mismatch case. They are not extra P4/P5 evidence.
 
 - `src/franka_dynamics_priors/`: environment, priors, nominal control, FER-QP.
 - `configs/`: frozen P2–P5 records; `assets/`: Panda MJCF/meshes.

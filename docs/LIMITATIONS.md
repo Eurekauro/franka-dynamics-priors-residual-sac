@@ -29,6 +29,7 @@
 
 ## Engineering and release limitations
 
-- The main project has no detected Git repository metadata or project-wide public license at the time of this draft.
-- The real-data environment is pinned, but the MuJoCo/SB3 release environment still needs a complete portable lock/specification.
-- Existing audit scripts and review bundles were designed for local evidence preservation; they require a portability and secrets/path audit before public release.
+- This repository has Git metadata, but no project-wide public license has been selected.
+- The showcase exposes a lightweight testable code path; frozen weights, policies, full episode data, and complete replay remain owner-retained.
+- `requirements.lock` is version-pinned but is not a complete portable hash/transitive lock.
+- Archived migration scripts may retain historical paths and are not current public entry points.
