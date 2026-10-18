@@ -5,12 +5,12 @@ Status values describe the current repository state; they are not release approv
 | Area | Status | Evidence / required action |
 |---|---|---|
 | Repository structure | PASS | Portable source, configs, and Panda assets are tracked; frozen artifacts are intentionally isolated. |
-| Tracked Git history | PASS_WITH_LIMITATIONS | Reachable local history was reviewed at the candidate HEAD. No tracked frozen model/policy/result/archive payloads were found; a fresh-clone check remains required before push. |
-| Lightweight public candidate | PASS_WITH_LIMITATIONS | Isolated `git archive` preflight and artifact-free unit functions pass locally; GitHub-hosted CI has not yet run. |
+| Tracked Git history | PASS_WITH_LIMITATIONS | Reachable local history was reviewed at the published candidate HEAD. No tracked frozen model/policy/result/archive payloads were found; an independent fresh-clone verification is retained in the publication review bundle. |
+| Lightweight public candidate | PASS | Isolated `git archive` preflight and artifact-free unit functions pass locally; GitHub Actions `public-ci` passed on the first public push. |
 | Full local artifact replay | PASS_WITH_LIMITATIONS | Existing `tools/verify_migration.py` is local-only because artifacts are ignored. |
 | Artifact distribution | PASS_WITH_LIMITATIONS | Owner authorized selected figures, aggregate tables, GIF, cover, and MP4 for showcase. Models, policies, full episode data, logs, and archives remain excluded. |
 | License compliance | PASS_WITH_LIMITATIONS | Original project source is Apache-2.0. Third-party Panda assets retain their own notices; frozen internal artifacts remain excluded. |
-| Secret and privacy review | PASS_WITH_LIMITATIONS | No high-confidence secret pattern found in reachable history; repeat scan before push and exclude historical-path archives. |
+| Secret and privacy review | PASS_WITH_LIMITATIONS | No high-confidence secret pattern found in reachable history or the final pre-push scan; historical-path archives remain excluded. |
 | Scientific accuracy | PASS_WITH_LIMITATIONS | Public prose must retain simulation-only, low P5 completion, and posthoc-baseline disclosures. |
 
 See `LICENSE_AUDIT.md`, `SECURITY_AND_PRIVACY_AUDIT.md`, and `DISTRIBUTION_MANIFEST.csv` for release evidence.

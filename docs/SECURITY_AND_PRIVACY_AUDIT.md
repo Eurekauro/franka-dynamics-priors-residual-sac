@@ -18,4 +18,4 @@ This review covers the current worktree and all reachable commits through the cu
 3. Keep `internal_archive/`, frozen artifacts, outputs, and virtual environments ignored.
 4. Review generated documentation and release attachments for personal paths before upload.
 
-**Status: PASS_WITH_LIMITATIONS.** No known credential was found in the reviewed range. Original source code is licensed under Apache-2.0, and the 16 selected showcase assets are Owner-authorized for this public repository. Frozen weights, SAC policies, full experimental artifacts, and internal archives remain excluded. GitHub-hosted CI is pending the first push.
+**Status: PASS_WITH_LIMITATIONS.** No known credential was found in the reviewed range. Original source code is licensed under Apache-2.0, and the 16 selected showcase assets are Owner-authorized for this public repository. Frozen weights, SAC policies, full experimental artifacts, and internal archives remain excluded. GitHub-hosted CI passed on the first public push.
