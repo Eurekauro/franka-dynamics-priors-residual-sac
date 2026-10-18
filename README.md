@@ -8,7 +8,9 @@ An empirical MuJoCo study of whether frozen, simulation-trained inverse-dynamics
 
 ![Franka Panda MuJoCo replay](docs/assets/demos/github_preview_point_to_point.gif)
 
-The GIF and [1080p showcase MP4](docs/assets/demos/main_showcase_reel.mp4) are exposed-scenario diagnostics, not additional P4/P5 evaluation evidence.
+[Watch the 1080p Highlight Reel](docs/assets/demos/main_showcase_reel.mp4) · [Watch the 1080p Research Demonstration](docs/assets/demos/research_demonstration.mp4)
+
+The video package presents frozen P4 Validation figures and P5 Nominal/Mismatch protocol-matched visualization replays with frozen residual-SAC controllers and Safety QP context. P4 is represented by frozen figures because no archived P4 per-state video trajectory is distributed. P5 motion is a protocol-matched visualization replay, not footage of the 9,750 formal episodes; some two-second fragments play at 0.5×. QP projection is command modification, not a safety violation. PD+Gravity P5 material is post-hoc exploratory, and the study provides neither real-robot validation nor safety certification.
 
 ## Questions and method
 
