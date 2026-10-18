@@ -2,6 +2,7 @@
 name = "franka-dynamics-priors-residual-sac"
 version = "0.1.0"
 description = "Frozen Sim-trained dynamics priors and safety-constrained Residual SAC evidence runtime"
+readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [
   "gymnasium==1.0.0",
@@ -18,3 +19,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

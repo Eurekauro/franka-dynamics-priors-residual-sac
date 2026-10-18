@@ -1,0 +1,25 @@
+name: public-ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  public-candidate:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install public runtime and test tools
+        run: python -m pip install --upgrade pip && python -m pip install numpy==2.2.6 scipy==1.15.2 gymnasium==1.0.0 mujoco==3.3.5 pytest && python -m pip install -e . --no-deps
+      - name: Compile project Python
+        run: python -m compileall -q src tools tests
+      - name: Check public-candidate structure
+        run: PYTHONPATH=src python tools/public_preflight.py
+      - name: Run unit tests without frozen artifacts
+        run: PYTHONPATH=src python -m pytest -q
