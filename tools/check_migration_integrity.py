@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Verify copied source assets and core runtime assets from the migration ledger."""
 from __future__ import annotations
-import csv, hashlib, json
+import csv, hashlib, json, os
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-SOURCE=Path('/home/yuli/projects/franka-panda-lip-residual-rl')
+SOURCE=Path(os.environ.get('FRANKA_MIGRATION_SOURCE','SOURCE_ROOT_MUST_BE_SET'))
 
 def sha(p):
  h=hashlib.sha256()
@@ -14,6 +14,7 @@ def sha(p):
  return h.hexdigest()
 
 def main():
+ if not SOURCE.is_dir(): raise SystemExit('set FRANKA_MIGRATION_SOURCE to the owner-controlled historical source root')
  rows=list(csv.DictReader((ROOT/'internal_archive/provenance/MIGRATION_MANIFEST.csv').open()))
  failed=[]
  for r in rows:

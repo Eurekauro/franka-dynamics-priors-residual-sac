@@ -13,7 +13,7 @@ import json
 import os
 from pathlib import Path
 
-SOURCE = Path('/home/yuli/projects/franka-panda-lip-residual-rl')
+SOURCE = Path(os.environ.get('FRANKA_MIGRATION_SOURCE', 'SOURCE_ROOT_MUST_BE_SET'))
 DEST = Path(__file__).resolve().parents[1]
 AUDIT = SOURCE / 'migration_staging'
 
@@ -47,6 +47,8 @@ def size_tree(p: Path) -> tuple[int, int]:
     return count, total
 
 def main() -> None:
+    if not SOURCE.is_dir():
+        raise SystemExit('set FRANKA_MIGRATION_SOURCE to the owner-controlled historical source root')
     out = DEST / 'internal_archive/provenance/MIGRATION_MANIFEST.csv'
     rows = []
     with (AUDIT / 'dependency_audit/REQUIRED_ASSETS.csv').open(newline='') as f:

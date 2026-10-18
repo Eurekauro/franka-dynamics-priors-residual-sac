@@ -77,9 +77,6 @@ Under this frozen simulation protocol, learned inverse-dynamics priors substanti
 
 ## Reproducibility map
 
-- Audit source and recomputation: `r3_mujoco/final_consolidation/audit_stats/`.
-- Figures and derived tables: `r3_mujoco/final_consolidation/visualization/`.
-- GitHub release drafts: `final_consolidation/github_docs/`.
-- Original P4-B review: `P4_Residual_SAC/round_03` in the Windows audit root.
-- Strict P5 review: `P5_ZeroShot_Robustness/round_06` in the Windows audit root.
-- PD+Gravity review: `P4B_PDGravity_Baseline/round_01` in the Windows audit root.
+- Current audit summaries and recomputation sources: `results/final_consolidation/audit_stats/` in the full local project.
+- Current figures and selected public copies: `results/final_consolidation/visualization/` locally and `docs/assets/` in the showcase.
+- Historical review bundles are owner-controlled internal evidence and are not public paths.

@@ -1,5 +1,5 @@
 # Reconstructed from the verified final Sim runtime.  Regenerate only in a new
-# environment; the original .venv-r3 is intentionally not transplanted.
+# environment; the historical virtual environment is intentionally not transplanted.
 gymnasium==1.0.0
 mujoco==3.3.5
 numpy==2.2.6
