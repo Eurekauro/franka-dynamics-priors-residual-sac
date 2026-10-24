@@ -1,0 +1,23 @@
+{
+  "id": "P3_P4_P5_FER_QP_V2_1",
+  "status": "FROZEN_BEFORE_P3_EXECUTION",
+  "parent_protocol": "P3_P4A_FROZEN_PROTOCOL_V1.json",
+  "safety_protocol": "P2_OFFICIAL_FER_QP_V2.1",
+  "timebase": {"control_dt_s": 0.004, "physics_dt_s": 0.002, "startup_controls": 500, "tracking_controls": 500},
+  "safety": {"implementation": "PandaSafetyFERQPV2.command_qp", "fail_closed": true, "historical_prediction_acceleration_margin_removed": 0.95},
+  "action": {"normalized_range": [-1.0, 1.0], "residual_scale_nm": [8.7,8.7,8.7,8.7,1.2,1.2,1.2], "pure_scale_nm": [87,87,87,87,12,12,12]},
+  "groups": {"A": "pure_sac", "B": "pd_residual", "C": "mlp_residual", "D": "gp_residual", "E": "rbf_residual"},
+  "priors": {
+    "mlp_residual": {"id": "MLP_3000_seed41", "path": "r3_mujoco/p2_offline/artifacts/mlp64x2_3000_41.npz", "sha256": "c17576003917c96db659f9fbe7f92632595b85d5d08d0b32348caed6738b2477"},
+    "gp_residual": {"id": "Expanded_GP_6000_g468", "path": "r3_mujoco/rbf_gp_expanded_campaign_v1/gp_n6000_g468.npz", "sha256": "96bb2206e8bfad59e133aa1eaf4111399fcb6355b589670879f05e95679dd056"},
+    "rbf_residual": {"id": "Expanded_RBF_30000_1536_w3", "path": "r3_mujoco/rbf_gp_expanded_campaign_v1/rbf_n30000_c1536_w3.0_a0.0003.npz", "sha256": "454f5a9478f454e218255146712943981f5d5cd3c4fe08a3a61aaf9176c5dd0c"}
+  },
+  "observation": {"fields": ["q_minus_qref_7","dq_minus_dqref_7","q_7","dq_7","ddqref_7","episode_phase_1","task_onehot_3"], "dimension": 39, "normalization": "fixed physical scales: q_error/0.15, dq_error/0.5, q/(joint_range_halfwidth), dq/velocity_limit, ddqref/acceleration_limit"},
+  "reward": {"tracking_position_scale_rad": 0.15, "tracking_velocity_scale_rad_s": 0.5, "velocity_weight": 0.1, "torque_weight": 0.001, "projection_weight": 0.01, "safety_termination": -100.0, "completion_bonus": 10.0},
+  "scenarios": {"tasks": ["point_to_point","single_joint","multi_joint"], "amplitude_multiplier": [0.8,1.0], "frequency_hz": [0.25,0.35], "phase_offset_rad": [-0.15,0.15], "train_seed_range": [10000,10999], "validation_seeds": [20000,20001,20002,20003,20004,20005,20006,20007,20008,20009,20010,20011], "final_holdout_seeds": [30000,30001,30002,30003,30004,30005,30006,30007,30008,30009,30010,30011,30012,30013,30014,30015,30016,30017,30018,30019,30020,30021,30022,30023,30024,30025,30026,30027,30028,30029]},
+  "pilot": {"transitions_total": 500000, "transitions_per_group": 100000, "seed": 101, "validation_every_transitions": 20000, "validation_scenarios": 12, "cpu_wall_limit_s": 43200, "gpu_time_limit_s": 21600},
+  "sac": {"library": "stable-baselines3==2.7.1", "policy": "MlpPolicy", "net_arch": [256,256], "learning_rate": 0.0003, "buffer_size": 200000, "learning_starts": 5000, "batch_size": 256, "gamma": 0.995, "tau": 0.005, "train_freq": 1, "gradient_steps": 1, "ent_coef": "auto"},
+  "p4b": {"status": "BLOCKED_UNTRACEABLE_FULL_BUDGET_SEED_CRITERIA", "rule": "requires one prospective Owner numerical-budget addendum before launch"},
+  "p5": {"status": "NOT_EXECUTABLE_BEFORE_P4B_POLICY_FREEZE"},
+  "prohibitions": ["no final_holdout before frozen-policy final evaluation", "no test/final-driven tuning", "no prior retraining", "no safety or timebase changes"]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "P4B_PD_GRAVITY_RESIDUAL_ADDENDUM_V1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "inherits": ["P3_P4_P5_FER_QP_V2_1", "P4B_FULL_TRAINING_ADDENDUM_V1"],
+  "group": {"F": "pd_gravity_residual"},
+  "controller": "Nominal analytical gravity + frozen PD + SAC residual; no learned prior",
+  "seeds": [201, 202, 203, 204, 205],
+  "transitions_per_seed": 500000,
+  "total_transitions": 2500000,
+  "parallelism": {"workers": 5, "single_environment_per_worker": true, "blas_threads_per_worker": 1, "torch_threads_per_worker": 1},
+  "validation": {"seeds": [20000,20001,20002,20003,20004,20005,20006,20007,20008,20009,20010,20011], "every_transitions": 50000, "checkpoint_rule": "inherits P4B_FULL_TRAINING_ADDENDUM_V1"},
+  "p5_extension": {"status": "POSTHOC_EXPLORATORY_BASELINE", "reference": "P5_NOMINAL_PREARMED_V2_CONTINUOUS", "episodes": 1950, "selection_prohibited": true},
+  "resources": {"cpu_core_hours_max": 30, "wall_hours_max": 12, "ram_gib_max": 28},
+  "prohibitions": ["no learned inverse-dynamics prior", "no change to SAC/reward/action/safety/timebase", "no retraining of existing five groups", "no use of P5 results for selection"]
+}

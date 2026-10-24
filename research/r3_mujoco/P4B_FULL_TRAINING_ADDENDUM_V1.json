@@ -1,0 +1,17 @@
+{
+  "id": "P4B_FULL_TRAINING_ADDENDUM_V1",
+  "status": "FROZEN_BEFORE_P4B_EXECUTION",
+  "inherits": "P3_P4_P5_FER_QP_V2_1",
+  "groups": {"A":"pure_sac","B":"pd_residual","C":"mlp_residual","D":"gp_residual","E":"rbf_residual"},
+  "seeds": [201,202,203,204,205],
+  "transitions_per_seed": 500000,
+  "total_jobs": 25,
+  "total_transitions": 12500000,
+  "validation": {"every_transitions":50000,"scenario_seeds":[20000,20001,20002,20003,20004,20005,20006,20007,20008,20009,20010,20011],"deterministic":true},
+  "checkpoint": {"every_transitions":50000,"requires":["model","replay_buffer","lossless_numpy_python_torch_rng"]},
+  "best_checkpoint_rule": ["max_complete_episodes","max_mean_tracking_steps","min_q_rmse_among_complete_episodes","max_mean_return","earlier_checkpoint_on_exact_tie"],
+  "resources": {"cpu_core_hours_max":120,"wall_hours_max":48,"gpu_device_hours_max":12,"ram_gib_max":28,"vram_gib_max":5,"initial_parallel_workers":4,"blas_threads_per_worker":1,"torch_threads_per_worker":1},
+  "statistical_reporting": {"cross_seed_mean":true,"cross_seed_dispersion":true,"confidence_interval":true,"failed_controls_retained":true},
+  "final_holdout": {"access":"only once after all checkpoint and policy selections are frozen","used_for_tuning":false},
+  "prohibitions": ["no reward/action/SAC/safety/prior changes","no validation-driven group deletion","no final-holdout tuning","no P4A seed101 inclusion"]
+}

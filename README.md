@@ -77,10 +77,12 @@ The showcase includes owner-authorized exposed-scenario diagnostic replays, incl
 
 - `src/franka_dynamics_priors/`: environment, priors, nominal control, FER-QP.
 - `configs/`: frozen P2–P5 records; `assets/`: Panda MJCF/meshes.
+- `research/r3_mujoco/`: original P2–P5 protocol source snapshot, including SAC training/evaluation entry points.
+- `results/final_consolidation/` and `visualization/v2_research_showcase/`: tracked audit, plotting, rendering, and video-assembly source; generated evidence and media remain private except for selected showcase assets.
 - `tools/`: public preflight and local artifact verification; `tests/`: artifact-free tests.
 - `docs/`: report, limitations, reproducibility, asset provenance, and licensing boundaries.
 
-Ignored roots (`models/`, `policies/`, `results/`, `visualization/`, `internal_archive/`) belong to `FULL_LOCAL_PROJECT`, not `GITHUB_PUBLIC_CANDIDATE`.
+Private artifacts under `models/`, `policies/`, `results/`, `visualization/`, and `internal_archive/` belong to `FULL_LOCAL_PROJECT`, not `GITHUB_PUBLIC_CANDIDATE`; narrowly allowlisted original source under `results/` and `visualization/` is tracked. See the [new-machine setup guide](docs/NEW_MACHINE_SETUP.md) for restoring owner-controlled artifacts.
 
 Learned priors beat Pure SAC and PD-without-gravity on strict-P5 aggregates, but PD+Gravity is post-hoc and does not establish a stable learned-prior benefit over analytical gravity. The experiment is finite and simulation-only; it demonstrates neither robust all-condition safety nor real-robot readiness. See [limitations](docs/LIMITATIONS.md), [reproducibility](docs/REPRODUCIBILITY.md), [licensing and reuse](docs/LICENSING_AND_REUSE.md), and [third-party notices](docs/THIRD_PARTY_NOTICES.md).
 

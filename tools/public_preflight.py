@@ -12,7 +12,12 @@ REQUIRED = (
     "configs/P2_OFFICIAL_FER_QP_V2.json",
     "configs/P3_P4_P5_FER_QP_V2_PROTOCOL.json",
     "docs/ARTIFACT_AVAILABILITY.md", "docs/LICENSING_AND_REUSE.md",
+    "docs/NEW_MACHINE_SETUP.md",
     "docs/THIRD_PARTY_NOTICES.md", "docs/assets/ASSET_PROVENANCE.md",
+    "research/README.md", "research/r3_mujoco/p4b_full_campaign.py",
+    "research/r3_mujoco/p5_nominal_isolated_confirmation.py",
+    "results/final_consolidation/visualization/plot_final_results.py",
+    "visualization/v2_research_showcase/run_v2e_final.py",
 )
 OPTIONAL_FROZEN = ("models/priors", "policies", "results")
 

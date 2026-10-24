@@ -1,0 +1,10 @@
+{
+  "id": "P2_OFFICIAL_FER_QP_V2_1",
+  "base_protocol": "P2_OFFICIAL_FER_QP_V2.json",
+  "status": "FROZEN_FOR_V2_1_RETEST",
+  "change": "Use a 1e-3 SI numerical-interface epsilon on the internal affine acceleration constraint only; monitor and reported hardware limits remain the official Panda values.",
+  "basis": "libfranka rate_limiting.h documents kLimitEps=1e-3. This is an inner numerical guard, not the withdrawn 0.95 project margin.",
+  "affine_acceleration_epsilon_rad_s2": 0.001,
+  "source": "https://frankaemika.github.io/libfranka/0.14.1/rate__limiting_8h.html",
+  "accessed": "2026-10-16"
+}
